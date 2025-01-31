@@ -1,6 +1,4 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
 ---
 
 <main>
@@ -9,7 +7,7 @@ import background from '../assets/background.svg';
 
 	<h1>Analyze your text in real-time.</h1>
 
-	<textarea name="" id="" placeholder="Start typing here… (or paste your text)"></textarea>
+	<textarea name="" id="text-area" placeholder="Start typing here… (or paste your text)"></textarea>
 
 	<hr>
 
@@ -25,20 +23,11 @@ import background from '../assets/background.svg';
 
 	<p>Approx. reading time: 2 minutes</p>
 
-	<p>
-		<b>278</b>
-		Total Characters
-	</p>
+	<p><b data-char-display>0</b> Total Characters</p>
 
-	<p>
-		<b>278</b>
-		Word Count
-	</p>
+	<p><b data-word-display>0</b> Word Count</p>
 	
-	<p>
-		<b>278</b>
-		Sentence Count
-	</p>
+	<p><b data-sentence-display>0</b> Sentence Count</p>
 	
 	<h2>Letter Density</h2>
 	<p>No characters found. Start typing to see letter density.</p>
