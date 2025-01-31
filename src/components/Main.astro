@@ -4,24 +4,42 @@ import background from '../assets/background.svg';
 ---
 
 <main>
-	Analyze your text in real-time.
+	<img src="/images/logo-light-theme.svg" alt="Character Counter">
+	<button>Change theme</button>
 
-	Start typing here… (or paste your text)
+	<h1>Analyze your text in real-time.</h1>
 
-	Exclude Spaces
-	Set Character Limit
+	<textarea name="" id="" placeholder="Start typing here… (or paste your text)"></textarea>
 
-	Approx. reading time: <!-- Insert number --> minutes
+	<hr>
 
-	<!-- Insert number -->
-	Total Characters
+	<label for="ExcludeSpaces">
+		Exclude Spaces
+		<input type="checkbox" name="" id="ExcludeSpaces">
+	</label>
 
-	<!-- Insert number -->
-	Word Count
+	<label for="SetCharLimit">
+		Set Character Limit
+		<input type="checkbox" name="" id="SetCharLimit">
+	</label>
 
-	<!-- Insert number -->
-	Sentence Count
+	<p>Approx. reading time: 2 minutes</p>
 
-	Letter Density
-	No characters found. Start typing to see letter density.
+	<p>
+		<b>278</b>
+		Total Characters
+	</p>
+
+	<p>
+		<b>278</b>
+		Word Count
+	</p>
+	
+	<p>
+		<b>278</b>
+		Sentence Count
+	</p>
+	
+	<h2>Letter Density</h2>
+	<p>No characters found. Start typing to see letter density.</p>
 </main>
