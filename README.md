@@ -2,8 +2,6 @@
 
 This is a solution to the [Character counter challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/character-counter-znSgeWs_i6).
 
-![Design preview for the Character counter coding challenge](./preview.jpg)
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -16,37 +14,19 @@ This is a solution to the [Character counter challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)       
+- [Acknowledgments](#acknowledgments)  
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
+# Overview
 
 ## The challenge
+![Design preview for the Character counter coding challenge](./preview.jpg)
 
-Your challenge is to build out this character counter and get it looking as close to the design as possible.
+The challenge was to build out this character counter and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
-
 - Analyze the character, word, and sentence counts for their text
 - Exclude/Include spaces in their character count
 - Set a character limit
@@ -59,21 +39,20 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/ferfalcon/character-counter/
+- Live Site URL: https://fer-character-counter.vercel.app/
 
 ## My process
 
 ### Built with
-
+- Code stored at GitHub
+- Deploy with Vercel
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [astro](https://astro.build/) - Web framework
 
 ## Author
 
