@@ -1,0 +1,63 @@
+main {
+	background: gainsboro;
+	max-width: 80%;
+	margin: auto;
+	display: grid;
+
+	grid-template-areas: 
+		'logo		theme-toggle'
+		'title		title'
+		'textarea	textarea'
+		'custom		custom'
+		'chars		chars'
+		'words		words'
+		'sentences	sentences'
+		'chart		chart';
+
+	@media (min-width: 40rem) {
+		grid-template-areas: 
+			'logo		logo		theme-toggle'
+			'title		title		title'
+			'textarea	textarea	textarea'
+			'custom		custom		custom'
+			'chars		words		sentences'
+			'chart		chart		chart';
+	}
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.theme-toggle {
+	grid-area: theme-toggle;
+}
+
+.main-heading {
+	grid-area: title;
+}
+
+.text-input {
+	grid-area: textarea;
+}
+
+.counter--chars {
+	grid-area: chars;
+}
+
+.counter--words {
+	grid-area: words;
+}
+
+.counter--sentence {
+	grid-area: sentences;
+}
+
+.custom {
+	display: flex;
+	grid-area: custom;
+}
+
+.chart {
+	grid-area: chart;
+}

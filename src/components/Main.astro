@@ -1,36 +1,46 @@
 ---
+import '../styles/styles.css'
 ---
 
 <main>
-	<img src="/images/logo-light-theme.svg" alt="Character Counter">
-	<button>Change theme</button>
+	<img class="logo" src="/images/logo-light-theme.svg" alt="Character Counter">
+	<button class="theme-toggle">Change theme</button>
 
-	<h1>Analyze your text in real-time.</h1>
+	<h1 class="main-heading">Analyze your text in real-time.</h1>
 
-	<textarea name="" id="text-area" placeholder="Start typing here… (or paste your text)"></textarea>
+	<textarea class="text-input" name="" id="text-area" placeholder="Start typing here… (or paste your text)"></textarea>
 
-	<hr>
-
-	<label for="ExcludeSpaces">
-		Exclude Spaces
-		<input type="checkbox" name="" id="ExcludeSpaces">
-	</label>
-
-	<label for="SetCharLimit">
-		Set Character Limit
-		<input type="checkbox" name="" id="SetCharLimit">
-	</label>
-
-	<p>Approx. reading time: 2 minutes</p>
-
-	<p><b data-char-display>0</b> Total Characters</p>
-
-	<p><b data-word-display>0</b> Word Count</p>
+	<div class="custom">
+		<label for="ExcludeSpaces">
+			Exclude Spaces
+			<input type="checkbox" name="" id="ExcludeSpaces">
+		</label>
 	
-	<p><b data-sentence-display>0</b> Sentence Count</p>
+		<label for="SetCharLimit">
+			Set Character Limit
+			<input type="checkbox" name="" id="SetCharLimit">
+		</label>
 	
-	<h2>Letter Density</h2>
-	<p>No characters found. Start typing to see letter density.</p>
+		<p>Approx. reading time: 2 minutes</p>
+	</div>
+
+
+	<p class="counter   counter--chars">
+		<b data-char-display>0</b> Total Characters
+	</p>
+
+	<p class="counter   counter--words">
+		<b data-word-display>0</b> Word Count
+	</p>
+	
+	<p class="counter   counter--sentence">
+		<b data-sentence-display>0</b> Sentence Count
+	</p>
+	
+	<div class="chart">
+		<h2>Letter Density</h2>
+		<p>No characters found. Start typing to see letter density.</p>
+	</div>
 </main>
 
 <script>
