@@ -24,8 +24,6 @@ This is a solution to the [Character counter challenge on Frontend Mentor](https
 
 The challenge was to build out this character counter and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
 Your users should be able to:
 - Analyze the character, word, and sentence counts for their text
 - Exclude/Include spaces in their character count
