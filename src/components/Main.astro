@@ -8,38 +8,43 @@ import '../styles/styles.css'
 
 	<h1 class="main-heading">Analyze your text in real-time.</h1>
 
-	<textarea class="text-input" name="" id="text-area" placeholder="Start typing here… (or paste your text)"></textarea>
+	<div class="text-processor">
+		<textarea class="text-processor__input" name="" id="text-area" placeholder="Start typing here… (or paste your text)"></textarea>
 
-	<div class="custom">
-		<label for="ExcludeSpaces">
-			Exclude Spaces
-			<input type="checkbox" name="" id="ExcludeSpaces">
-		</label>
-	
-		<label for="SetCharLimit">
-			Set Character Limit
-			<input type="checkbox" name="" id="SetCharLimit">
-		</label>
-	
-		<p>Approx. reading time: 2 minutes</p>
+		<div class="text-processor__settings">
+			<label for="ExcludeSpaces">
+				<input type="checkbox" name="" id="ExcludeSpaces">
+				Exclude Spaces
+			</label>
+		
+			<label for="SetCharLimit">
+				<input type="checkbox" name="" id="SetCharLimit">
+				Set Character Limit
+			</label>
+		
+			<p class="text-processor__read-time">Approx. reading time: 2 minutes</p>
+		</div>
 	</div>
 
+	<div class="results">
+		<div class="results__cards">
+			<p class="counter   counter--chars">
+				<b class="counter__number" data-char-display>0</b> Total Characters
+			</p>
+		
+			<p class="counter   counter--words">
+				<b class="counter__number" data-word-display>0</b> Word Count
+			</p>
+			
+			<p class="counter   counter--sentence">
+				<b class="counter__number" data-sentence-display>0</b> Sentence Count
+			</p>
+		</div>
 
-	<p class="counter   counter--chars">
-		<b data-char-display>0</b> Total Characters
-	</p>
-
-	<p class="counter   counter--words">
-		<b data-word-display>0</b> Word Count
-	</p>
-	
-	<p class="counter   counter--sentence">
-		<b data-sentence-display>0</b> Sentence Count
-	</p>
-	
-	<div class="chart">
-		<h2>Letter Density</h2>
-		<p>No characters found. Start typing to see letter density.</p>
+		<div class="results__chart">
+			<h2>Letter Density</h2>
+			<p>No characters found. Start typing to see letter density.</p>
+		</div>
 	</div>
 </main>
 

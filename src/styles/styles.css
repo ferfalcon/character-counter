@@ -1,63 +1,126 @@
+body {
+	margin: 0;
+	font-family: "DM Sans", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
 main {
-	background: gainsboro;
-	max-width: 80%;
+	padding: 1rem 1rem 2.5rem;
 	margin: auto;
 	display: grid;
+	gap: 40px 0;
 
 	grid-template-areas: 
-		'logo		theme-toggle'
-		'title		title'
-		'textarea	textarea'
-		'custom		custom'
-		'chars		chars'
-		'words		words'
-		'sentences	sentences'
-		'chart		chart';
+		'logo				theme-toggle'
+		'title				title'
+		'text-processor		text-processor'
+		'results			results'
+		'chart				chart';
 
 	@media (min-width: 40rem) {
 		grid-template-areas: 
-			'logo		logo		theme-toggle'
-			'title		title		title'
-			'textarea	textarea	textarea'
-			'custom		custom		custom'
-			'chars		words		sentences'
-			'chart		chart		chart';
+			'logo				logo				theme-toggle'
+			'title				title				title'
+			'text-processor		text-processor		text-processor'
+			'results			results				results';
 	}
 }
 
 .logo {
 	grid-area: logo;
+	max-height: 30px;
+	width: auto;
 }
 
 .theme-toggle {
 	grid-area: theme-toggle;
+	font-family: inherit;
 }
 
 .main-heading {
 	grid-area: title;
+	text-align: center;
+	margin: 0;
 }
 
-.text-input {
-	grid-area: textarea;
+.text-processor {
+	display: grid;
+	gap: 1rem;
+	grid-area: text-processor;
+}
+
+.text-processor__input {
+	font-family: inherit;
+	border: solid 2px gainsboro;
+	background: whitesmoke;
+	border-radius: 12px;
+	padding: 12px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.4;
+	min-height: 200PX;
+}
+
+.text-processor__settings {
+	display: flex;
+	flex-direction: column;
+	gap: .75rem;
+}
+
+.text-processor__read-time {
+	margin: 0;
+}
+
+.counter {
+	flex-grow: 1;
+	border-radius: 12px;
+	background: orange;
+	padding: 20px;
+	display: grid;
 }
 
 .counter--chars {
-	grid-area: chars;
+	margin: 0;
 }
 
 .counter--words {
-	grid-area: words;
+	margin: 0;
 }
 
 .counter--sentence {
-	grid-area: sentences;
+	margin: 0;
 }
 
-.custom {
+.counter__number {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.results {
+	grid-area: results;
+	display: grid;
+	gap: 1.5rem;
+}
+
+.results__cards {
 	display: flex;
-	grid-area: custom;
+	flex-direction: column;
+	gap: 1rem;
+
+	@media (min-width: 40rem) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
-.chart {
-	grid-area: chart;
+.results__chart {
+	h2 {
+		margin: 0;
+	}
+
+	p {
+		margin: 0;
+	}
 }
